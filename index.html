@@ -436,6 +436,15 @@ footer div p a {
       >
       na trilha Start na Programação 🤘 da OneBitCode.
     </div>
-    <script src="assets/js/script.js" defer></script>
+<!--     <script src="assets/js/script.js" defer></script> -->
+    <script>
+      const elementosDuvida = document.querySelectorAll(".duvida");
+
+elementosDuvida.forEach(function (duvida) {
+  duvida.addEventListener("click", function () {
+    duvida.classList.toggle("ativa");
+  });
+});
+    </script>
   </body>
 </html>
